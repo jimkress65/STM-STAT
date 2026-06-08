@@ -90,4 +90,4 @@ ORCID: 0000-0002-2511-6822
 ## Acknowledgments
 
 With gratitude to Dave and Geri Brown and Henriette Eles. This work is dedicated to the memory of
-Patience Canice Kress Hensley (1951–2009).
+Patience Canice Kress Hensley (1951–2009) who died from recurrent Ewing Sarcoma.
