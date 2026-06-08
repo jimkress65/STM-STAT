@@ -1,0 +1,326 @@
+{
+  "_metadata": {
+    "script": "data_extract_brs_and_fig2.py",
+    "n_patients": 10000,
+    "seed": 42,
+    "model_version": "v435 parameters via brs_comparison_v2.py engine",
+    "cohort": "localized",
+    "meta_fraction": 0.0,
+    "source_engine": "brs_comparison_v2.py",
+    "description": "Verified data extraction for figures \u2014 NO fabricated values"
+  },
+  "brs_discrimination_metrics": [
+    {
+      "subgroup": "Wild-type",
+      "n": 7297,
+      "c_eq": 0.5821,
+      "c_co": 0.5825,
+      "r_eq": 0.54,
+      "r_co": 0.6533,
+      "efs_spread_eq": 0.1246,
+      "efs_spread_co": 0.1628,
+      "efs_tert_eq": [
+        0.4561,
+        0.5325,
+        0.5807
+      ],
+      "efs_tert_co": [
+        0.4411,
+        0.5242,
+        0.6039
+      ],
+      "event_rate": 0.4751
+    },
+    {
+      "subgroup": "TP53+ only",
+      "n": 998,
+      "c_eq": 0.5173,
+      "c_co": 0.5344,
+      "r_eq": 0.4197,
+      "r_co": 0.4797,
+      "efs_spread_eq": 0.0395,
+      "efs_spread_co": 0.0745,
+      "efs_tert_eq": [
+        0.2798,
+        0.3204,
+        0.3193
+      ],
+      "efs_tert_co": [
+        0.2703,
+        0.3044,
+        0.3448
+      ],
+      "event_rate": 0.6894
+    },
+    {
+      "subgroup": "STAG2+ only",
+      "n": 998,
+      "c_eq": 0.5745,
+      "c_co": 0.5869,
+      "r_eq": 0.6611,
+      "r_co": 0.7901,
+      "efs_spread_eq": 0.1195,
+      "efs_spread_co": 0.1412,
+      "efs_tert_eq": [
+        0.4238,
+        0.4686,
+        0.5433
+      ],
+      "efs_tert_co": [
+        0.4065,
+        0.4815,
+        0.5477
+      ],
+      "event_rate": 0.521
+    },
+    {
+      "subgroup": "TP53+/STAG2+",
+      "n": 707,
+      "c_eq": 0.5205,
+      "c_co": 0.53,
+      "r_eq": 0.5327,
+      "r_co": 0.6196,
+      "efs_spread_eq": 0.0499,
+      "efs_spread_co": 0.0584,
+      "efs_tert_eq": [
+        0.2411,
+        0.2859,
+        0.291
+      ],
+      "efs_tert_co": [
+        0.2446,
+        0.2704,
+        0.303
+      ],
+      "event_rate": 0.7199
+    },
+    {
+      "subgroup": "All patients",
+      "n": 10000,
+      "c_eq": 0.5905,
+      "c_co": 0.5842,
+      "r_eq": 0.5659,
+      "r_co": 0.676,
+      "efs_spread_eq": 0.1499,
+      "efs_spread_co": 0.1898,
+      "efs_tert_eq": [
+        0.4015,
+        0.485,
+        0.5515
+      ],
+      "efs_tert_co": [
+        0.3856,
+        0.4769,
+        0.5755
+      ],
+      "event_rate": 0.5184
+    }
+  ],
+  "scatter_data": {
+    "TP53_only": {
+      "n": 998,
+      "r_equal": 0.4197,
+      "r_conditional": 0.4797
+    },
+    "STAG2_only": {
+      "n": 998,
+      "r_equal": 0.6611,
+      "r_conditional": 0.7901
+    },
+    "_note": "Full scatter arrays omitted from JSON for size. Available in scatter_data_full.json if needed."
+  },
+  "fig2_incremental": {
+    "panel_a_genetics": {
+      "No adverse": {
+        "n": 5937,
+        "mean_efs_pct": 52.6,
+        "std_efs_pct": 36.8
+      },
+      "STAG2 only": {
+        "n": 795,
+        "mean_efs_pct": 48.2,
+        "std_efs_pct": 35.0
+      },
+      "RB1/CDKN2A": {
+        "n": 1360,
+        "mean_efs_pct": 51.0,
+        "std_efs_pct": 35.4
+      },
+      "TP53 only": {
+        "n": 998,
+        "mean_efs_pct": 30.6,
+        "std_efs_pct": 27.0
+      },
+      "TP53+STAG2": {
+        "n": 707,
+        "mean_efs_pct": 27.3,
+        "std_efs_pct": 23.7
+      }
+    },
+    "panel_b_biomarkers": {
+      "No adverse": {
+        "favorable": {
+          "n": 3346,
+          "mean_efs_pct": 58.5
+        },
+        "elevated": {
+          "n": 2591,
+          "mean_efs_pct": 45.0
+        }
+      },
+      "STAG2 only": {
+        "favorable": {
+          "n": 360,
+          "mean_efs_pct": 52.3
+        },
+        "elevated": {
+          "n": 435,
+          "mean_efs_pct": 44.8
+        }
+      },
+      "RB1/CDKN2A": {
+        "favorable": {
+          "n": 767,
+          "mean_efs_pct": 56.5
+        },
+        "elevated": {
+          "n": 593,
+          "mean_efs_pct": 43.8
+        }
+      },
+      "TP53 only": {
+        "favorable": {
+          "n": 313,
+          "mean_efs_pct": 33.2
+        },
+        "elevated": {
+          "n": 685,
+          "mean_efs_pct": 29.5
+        }
+      },
+      "TP53+STAG2": {
+        "favorable": {
+          "n": 132,
+          "mean_efs_pct": 30.5
+        },
+        "elevated": {
+          "n": 575,
+          "mean_efs_pct": 26.5
+        }
+      }
+    },
+    "panel_c_brs_quartiles": {
+      "Wild-type": {
+        "Q1 (lowest)": {
+          "n": 1514,
+          "mean_efs_pct": 41.6
+        },
+        "Q2": {
+          "n": 1713,
+          "mean_efs_pct": 48.1
+        },
+        "Q3": {
+          "n": 1873,
+          "mean_efs_pct": 54.7
+        },
+        "Q4 (highest)": {
+          "n": 2197,
+          "mean_efs_pct": 60.9
+        }
+      },
+      "STAG2+": {
+        "Q1 (lowest)": {
+          "n": 249,
+          "mean_efs_pct": 41.2
+        },
+        "Q2": {
+          "n": 264,
+          "mean_efs_pct": 44.2
+        },
+        "Q3": {
+          "n": 325,
+          "mean_efs_pct": 51.1
+        },
+        "Q4 (highest)": {
+          "n": 160,
+          "mean_efs_pct": 57.7
+        }
+      },
+      "TP53+": {
+        "Q1 (lowest)": {
+          "n": 737,
+          "mean_efs_pct": 26.1
+        },
+        "Q2": {
+          "n": 523,
+          "mean_efs_pct": 30.6
+        },
+        "Q3": {
+          "n": 302,
+          "mean_efs_pct": 33.3
+        },
+        "Q4 (highest)": {
+          "n": 143,
+          "mean_efs_pct": 32.1
+        }
+      }
+    },
+    "panel_d_mrd": {
+      "Wild-type": {
+        "MRD_negative": {
+          "n": 4835,
+          "mean_efs_pct": 78.3
+        },
+        "MRD_positive": {
+          "n": 2462,
+          "mean_efs_pct": 1.3
+        }
+      },
+      "STAG2+": {
+        "MRD_negative": {
+          "n": 645,
+          "mean_efs_pct": 73.4
+        },
+        "MRD_positive": {
+          "n": 353,
+          "mean_efs_pct": 1.2
+        }
+      },
+      "TP53+": {
+        "MRD_negative": {
+          "n": 547,
+          "mean_efs_pct": 54.9
+        },
+        "MRD_positive": {
+          "n": 451,
+          "mean_efs_pct": 1.2
+        }
+      },
+      "TP53+STAG2": {
+        "MRD_negative": {
+          "n": 390,
+          "mean_efs_pct": 48.4
+        },
+        "MRD_positive": {
+          "n": 317,
+          "mean_efs_pct": 1.2
+        }
+      }
+    },
+    "biomarker_medians": {
+      "ldh_score": 0.5291,
+      "alp_score": 0.3357,
+      "ctdna_score": 0.5415
+    },
+    "brs_quartile_cutoffs": {
+      "q25": 0.3309,
+      "q50": 0.4834,
+      "q75": 0.6265
+    }
+  },
+  "mrd_summary": {
+    "mrd_pos_recurrence_pct": 98.9,
+    "mrd_neg_recurrence_pct": 25.6,
+    "risk_ratio": 3.9
+  }
+}
